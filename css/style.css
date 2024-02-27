@@ -27,14 +27,14 @@ body{
 /* MAIN */
 main{
     height: 100vh;
+    position: relative;
 }
 .users{
     width: 100%;
     height: calc(100% - 12vh);
     padding: 40px;
-
-    /* debug */
-    background-color: brown;
+    background-color: black;
+    overflow: scroll;
 
 }
 .toolbar{
@@ -46,17 +46,16 @@ main{
 }
 
 /* USERS */
-.user-view{
+.usercard{
     height: 15vh;
     width: calc(100% / 7 - 15px);
     min-width: 150px;
     margin-right: 3px;
     margin-bottom: 10px;
-    position: relative;
+}
 
-    /* debug */
-    background-color: blue;
-    border: 1px solid black;
+.user-view{
+    position: relative;
 }
 
 .username{
@@ -68,3 +67,19 @@ main{
     background-color: rgba(0,0,0, 0.3);
 }
 
+/* VIEWFUNCTIONS */
+.viewfunctions{
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    font-size: 0.6rem;
+}
+.spkrview i{
+    padding-right: 3px;
+}
+
+.spkrview, .mxmz{
+    background-color: rgb(102, 101, 101);
+    border-radius: 5px;
+    padding: 5px;
+}
