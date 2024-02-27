@@ -53,7 +53,6 @@ main{
 }
 
 .usercard{
-    height: 15vh;
     width: calc(100% / 7 - 15px);
     min-width: 150px;
     margin-right: 3px;
