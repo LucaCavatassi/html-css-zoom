@@ -24,6 +24,15 @@ body{
 .x-align{
     justify-content: center;
 }
+
+.y-align{
+    align-items: center;
+}
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
 /* MAIN */
 main{
     height: 100vh;
@@ -31,18 +40,19 @@ main{
 }
 .users{
     width: 100%;
-    height: calc(100% - 12vh);
-    padding: 40px;
+    height: calc(100vh - 100px);
+    padding: 20px;
     background-color: black;
     overflow: scroll;
 
 }
 .toolbar{
     width: 100%;
-    height: 12vh;
+    height: 100px;
+    padding: 10px;
 
     /* debug */
-    background-color: blanchedalmond;
+    background-color: rgb(55, 55, 55);
 }
 
 /* USERS */
@@ -82,4 +92,27 @@ main{
     background-color: rgb(102, 101, 101);
     border-radius: 5px;
     padding: 5px;
+}
+
+/* TOOLBAR */
+.col{
+    width: 25%;
+    height: 100%;
+    /* debug */
+    border: 1px solid black;
+    
+}
+.bigcol{
+    flex-grow: 1;
+    /* debug */
+    border: 1px solid black;
+}
+
+.toolicons{
+    padding-left: 4px;
+    font-size: 2.2rem;
+}
+
+.openup{
+    padding-left: 10px;
 }
